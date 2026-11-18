@@ -1,0 +1,46 @@
+# ============ Secrets ============
+.env
+*.env.local
+!.env.example
+
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ============ Virtual environments ============
+.venv/
+venv/
+env/
+
+# ============ Generated data (recreate with: python generate_logs.py) ============
+data/
+*.duckdb
+*.duckdb.wal
+
+# ============ Generated outputs ============
+remediations/
+reports/
+*.log
+
+# ============ Streamlit ============
+.streamlit/secrets.toml
+
+# ============ Terraform (if students run the generated .tf) ============
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform.lock.hcl
+
+# ============ Docker / Elasticsearch volumes ============
+esdata/
+
+# ============ IDE / OS ============
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
